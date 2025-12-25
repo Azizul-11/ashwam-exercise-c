@@ -1,0 +1,25 @@
+{
+  "name": "light-parse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "parse": "node src/cli.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "dev" : "node src/cli.js --in data/entries.jsonl --out output/parsed.jsonl"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
